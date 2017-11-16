@@ -20,15 +20,22 @@
   <platform name="android">
     <icon src="img/ionic.png" />
 	
-    <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>
-    <icon src="resources/android/icon/drawable-mdpi-icon.png" density="mdpi"/>
-    <icon src="resources/android/icon/drawable-hdpi-icon.png" density="hdpi"/>
-    <icon src="resources/android/icon/drawable-xhdpi-icon.png" density="xhdpi"/>
-    <icon src="resources/android/icon/drawable-xxhdpi-icon.png" density="xxhdpi"/>
-    <icon src="resources/android/icon/drawable-xxxhdpi-icon.png" density="xxxhdpi"/>
+    <icon src="img/ionic.png" density="ldpi"/>
+    <icon src="img/ionic.png" density="mdpi"/>
+    <icon src="img/ionic.png" density="hdpi"/>
+    <icon src="img/ionic.png" density="xhdpi"/>
+    <icon src="img/ionic.png" density="xxhdpi"/>
+    <icon src="img/ionic.png" density="xxxhdpi"/>
     
 	<splash src="img/splash.png" />
-	
+	<splash src="img/splash.png" density="land-hdpi" />
+<splash src="img/splash.png" density="land-ldpi" />
+<splash src="img/splash.png" density="land-mdpi" />
+<splash src="img/splash.png" density="land-xhdpi" />
+<splash src="img/splash.png" density="port-hdpi" />
+<splash src="img/splash.png" density="port-ldpi" />
+<splash src="img/splash.png" density="port-mdpi" />
+<splash src="img/splash.png" density="port-xhdpi" />
 
   </platform>
 </widget>
