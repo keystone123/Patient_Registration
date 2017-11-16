@@ -86,8 +86,6 @@
    $data[] = $arr;
    
  echo json_encode($data);
-     echo '<script type="text/javascript">';  
-     echo 'window.location.href = "";';
-     echo '</script>';
+     
    }
   ?>

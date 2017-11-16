@@ -11,14 +11,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 <script type = "text/javascript">
     var input = {
-				"Name":"dfxhb",
-				"City":"kiran"
-				
-				
+				"name":"dfxhb"								
 				};
     $.ajax({
         type: 'POST',
-        url: 'http://192.168.0.212/patientRegApi/PatientService.svc/Patient/Add',
+        url: 'http://192.168.0.212/patientRegApi/PatientService.svc/Patient',
         data: JSON.stringify(input),
         crossDomain: true,
         dataType: 'text json',
