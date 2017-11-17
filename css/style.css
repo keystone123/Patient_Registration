@@ -35,10 +35,9 @@ a.hiddenanchor{
 /** The wrapper that will contain our two forms **/
 #wrapper{
 	width: 60%;
-	right: 0px;
-	min-height: 560px;	
-	margin: 0px auto;	
-	width: 700px;
+	min-height: auto;	
+	margin:auto;	
+	margin: 0px auto;
 	position: relative;	
 }
 /**** Styling the form elements **/
@@ -111,7 +110,7 @@ input {
 
 /* all the input except submit and checkbox */
 #wrapper input:not([type="checkbox"]){
-	width: 92%;
+	width: 80%;
 	margin-top: 4px;
 	padding: 10px 5px 10px 32px;	
 	border: 1px solid rgb(178, 178, 178);
@@ -152,15 +151,15 @@ input {
 
 /*styling both submit buttons */
 #wrapper p.button input{
-	width: 30%;
+	width: 20%;
 	cursor: pointer;	
 	background: rgb(61, 157, 179);
 	padding: 8px 5px;
 	font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
 	color: #fff;
-	font-size: 24px;	
+	font-size: 18px;	
 	border: 1px solid rgb(28, 108, 122);	
-	margin-bottom: 10px;	
+	margin-bottom: 5px;	
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
@@ -194,8 +193,8 @@ input {
 }
 p.login.button,
 p.signin.button{
-	text-align: right;
-	margin: 5px 0;
+	text-align: left;
+	margin: 5px 0px;
 }
 
 

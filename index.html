@@ -1,9 +1,4 @@
-<?php
-error_reporting(0);
-$fname = $_POST['fname'];
-$mname = $_POST['mname'];
-$lname = $_POST['lname'];
-?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
@@ -13,7 +8,7 @@ $lname = $_POST['lname'];
     <head>
         <meta charset="UTF-8" />
         <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
-        <title>Welcome TO Q9 Diagnostic</title>
+        <title>Welcome TO Keystone-Healthcare</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
         <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
@@ -22,7 +17,7 @@ $lname = $_POST['lname'];
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/s.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -32,17 +27,17 @@ $lname = $_POST['lname'];
             <!-- Codrops top bar -->
             <div class="codrops-top">
                 <a href="">
-                    <strong> Q9 </strong>Diagnostic
+                    <strong> Keystone-Healthcare</strong>
                 </a>
                 <span class="right">
                     <a href=" http://tympanus.net/codrops/2012/03/27/login-and-registration-form-with-html5-and-css3/">
-                        <strong>Welcome To Q9 Diagnostic</strong>
+                        <strong> Keystone-Healthcare</strong>
                     </a>
                 </span>
                 <div class="clr"></div>
             </div><!--/ Codrops top bar -->
             <header>
-                <h1>Welcome To<span>  Q9 Diagnostic</span></h1>
+                <h1>Welcome To<span> <img src="img/keystone.png" width="150px"; height="50px";></span></h1>
 				<!--<nav class="codrops-demos">
 					<span>Click <strong>"Join us"</strong> to see the form switch</span>
 					<a href="index.html" class="current-demo">Demo 1</a>
@@ -60,28 +55,28 @@ $lname = $_POST['lname'];
                             <form  action="main.php"  method="POST"> 
                                 <h1>Patient Registration Form</h1> 
                                 
-								<p>
-                                    <label for="fname"  data-icon="u" > <b>First Name*</b></label>
+								<div class="form-group">
+                                    <label for="fname"  data-icon="u" > <b>First Name*</b></label></br>
                                     <input id="fname" name="fname" required="required" type="text" placeholder="First Name"/>
-                                </p>
-								<p> 
-                                    <label for="mname"> <b>Middle Name</b> </label>
+                                </div>
+								<div class="form-group">
+                                    <label for="mname"> <b>Middle Name</b> </label></br>
                                     <input id="mname" name="mname" required="required" type="text" placeholder="Middle Name"/>
-                                </p>
+                                </div>
 								<p> 
-                                    <label for="lname"> <b>Last Name</b> </label>
+                                    <label for="lname"> <b>Last Name</b> </label></br>
                                     <input id="lname" name="lname" required="required" type="text" placeholder="Last Name"/>
                                 </p>
 								<p> 
-                                    <label for="dob"> <b>Date Of Birth *</b> </label>
+                                    <label for="dob"> <b>Date Of Birth *</b> </label></br>
                                     <input id="dob" name="dob" required="required" type="date" placeholder="Date Of Birth"/>
                                 </p>
 								<p> 
-                                    <label for="age"> <b>Age</b> </label>
+                                    <label for="age"> <b>Age</b> </label><br>
                                     <input id="age" name="age" required="required" type="number" min="1" step="1" placeholder="Age"/>
                                 </p>
-								<p><b>Gender:</b>
-								<select name="gender" required="required">
+								<p><b>Gender:</b></br>
+								<select name="gender" required="required" style="width:80%">
 								<option value=""><---Select Gender---></option>
 								  <option value="male">Male</option>
 								  <option value="female">Female</option>
@@ -89,18 +84,18 @@ $lname = $_POST['lname'];
 								</select>
 								 </p>
 								<p> 
-                                    <label for="mobile"> <b>Mobile Number</b> </label>
+                                    <label for="mobile"> <b>Mobile Number</b> </label></br>
                                     <input id="mobile" name="mobile" required="required" type="text" pattern="[789][0-9]{9}" placeholder="Mobile Number"/>
                                 </p>
 								<p> 
-                                    <label for="inputEmail" class="control-label">Email</label>
+                                    <label for="inputEmail" class="control-label">Email</label></br>
 									  <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" data-error=" that email address is invalid" style="height:20px"; required>
 									  
                                 </p>
 							
 								
-								<p><b>Blood Group:</b>
-								<select name="blood" required="required">
+								<p><b>Blood Group:</b></br>
+								<select name="blood" required="required" style="width:80%">
 								<option value=""><---Select Blood Group---></option>
 								  <option value="o-">o-(negative)</option>
 								  <option value="o+">o+(positive)</option>
@@ -113,35 +108,35 @@ $lname = $_POST['lname'];
 								</select>
 								 </p>
 								<p> 
-                                    <label for="con"> <b>Consultant</b> </label>
+                                    <label for="con"> <b>Consultant</b> </label></br>
                                     <input id="con" name="con" required="required" type="text" placeholder="Consultant"/>
                                 </p>
 								<p> 
-                                    <label for="doc"> <b>Refering Doctor</b> </label>
+                                    <label for="doc"> <b>Refering Doctor</b> </label></br>
                                     <input id="doc" name="doc" required="required" type="text" placeholder="Refering Doctor"/>
                                 </p>
 								<p> 
-                                    <label for="patient"> <b>Patient Category Code</b> </label>
+                                    <label for="patient"> <b>Patient Category Code</b> </label></br>
                                     <input id="patient" name="patient" required="required" type="text" placeholder="Patient Category Code"/>
                                 </p>
 								<p> 
-                                    <label for="org"> <b>Organization Code</b> </label>
+                                    <label for="org"> <b>Organization Code</b> </label></br>
                                     <input id="org" name="org" required="required" type="text" placeholder="Organization Code"/>
                                 </p>
 								<p> 
-                                    <label for="staff"> <b>Staff Number</b> </label>
+                                    <label for="staff"> <b>Staff Number</b> </label></br>
                                     <input id="staff" name="staff" required="required" type="text" placeholder="Staff Number"/>
                                 </p>
 								<p> 
-                                    <label for="kin"> <b>Next Of Kin</b> </label>
+                                    <label for="kin"> <b>Next Of Kin</b> </label></br>
                                     <input id="kin" name="kin" required="required" type="text" placeholder="Next Of Kin"/>
                                 </p>
 								<p> 
-                                    <label for="rel"> <b>Relationship</b> </label>
+                                    <label for="rel"> <b>Relationship</b> </label></br>
                                     <input id="rel" name="rel" required="required" type="text" placeholder="Relationship"/>
                                 </p>
 								<p> 
-                                    <label for="old"> <b>Old reg.no</b> </label>
+                                    <label for="old"> <b>Old reg.no</b> </label></br>
                                     <input id="old" name="old" required="required" type="text" placeholder="Old reg.no"/>
                                 </p>
 								
@@ -154,12 +149,12 @@ $lname = $_POST['lname'];
                              });
                             </script>
 								<p> Please click on Below Buttons To Enter Personal And Other Details</p>
-								<a href="#personal" class="btn btn-info" data-toggle="collapse" data-toggle="tooltip" title="please fill this field!" style="background-color:white">Personal Details *</a>
+								<a href="#personal" class="btn btn-info" data-toggle="collapse" data-toggle="tooltip" title="please fill this field!" style="background-color:white">Personal Details *</a>&nbsp;
 								<a href="#other" class="btn btn-info" data-toggle="collapse" data-toggle="tooltip" title="please fill this field!" style="background-color:white">Other Details *</a>
 								<div id="personal" class="collapse">
                                   <p align="left" style="font-size:22px"><b><u>Personal Details:</u></b></p><br>
-								<p><b>Marital Status:</b>
-								<select name="marital">
+								<p><b>Marital Status:</b><br>
+								<select name="marital" style="width:80%">
 								<option value=""><---Select Marital status---></option>
 								  <option value="single">Single</option>
 								  <option value="married">Married</option>
@@ -167,39 +162,39 @@ $lname = $_POST['lname'];
 								</select>
 								 </p>
 								 <p> 
-                                    <label for="house"> <b>House number</b> </label>
+                                    <label for="house"> <b>House number</b> </label></br>
                                     <input id="house" name="house"  type="text" placeholder="House number"/>
                                 </p>
 								<p> 
-                                    <label for="street"> <b>Street Name</b> </label>
+                                    <label for="street"> <b>Street Name</b> </label></br>
                                     <input id="street" name="street"  type="text" placeholder="Street Name"/>
                                 </p>
 								<p> 
-                                    <label for="area"> <b>Area</b> </label>
+                                    <label for="area"> <b>Area</b> </label></br>
                                     <input id="area" name="area"  type="text" placeholder="Area"/>
                                 </p>
 								<p> 
-                                    <label for="zip"> <b>Zip Code</b> </label>
+                                    <label for="zip"> <b>Zip Code</b> </label></br>
                                     <input id="zip" name="zip"  type="text" placeholder="Zip Code"/>
                                 </p>
 								<p> 
-                                    <label for="city"> <b>City</b> </label>
+                                    <label for="city"> <b>City</b> </label></br>
                                     <input id="city" name="city"  type="text" placeholder="City"/>
                                 </p>
 								<p> 
-                                    <label for="state"> <b>State</b> </label>
+                                    <label for="state"> <b>State</b> </label></br>
                                     <input id="state" name="state"  type="text" placeholder="State"/>
                                 </p>
 								<p> 
-                                    <label for="country"> <b>Country</b> </label>
+                                    <label for="country"> <b>Country</b> </label></br>
                                     <input id="country" name="country"  type="text" placeholder="Country"/>
                                 </p>
 								<p> 
-                                    <label for="reg"> <b>Reg Date *</b> </label>
+                                    <label for="reg"> <b>Reg Date *</b> </label></br>
                                     <input id="reg" name="reg"  type="date" placeholder="Reg Date"/>
                                 </p>
 								<p> 
-                                    <label for="val"> <b>Validity Date</b> </label>
+                                    <label for="val"> <b>Validity Date</b> </label></br>
                                     <input id="val" name="val"  type="date" placeholder="Validity Date"/>
                                 </p>
 								 
@@ -210,38 +205,38 @@ $lname = $_POST['lname'];
 								<div id="other" class="collapse">
 								<p align="left" style="font-size:22px"><b><u>Other Details:</u></b></p><br>
 								<p> 
-                                    <label for="emergency"> <b>Emergency Contact\attendant</b> </label>
+                                    <label for="emergency"> <b>Emergency Contact\attendant</b> </label></br>
                                     <input id="emergency" name="emergency"  type="text" placeholder="Emergency Contact\attendant"/>
                                 </p>
 								<p> 
-                                    <label for="relation"> <b>Relationship with Patient</b> </label>
+                                    <label for="relation"> <b>Relationship with Patient</b> </label></br>
                                     <input id="relation" name="relation"  type="text" placeholder="Realationship with Patient"/>
                                 </p>
 								<p> 
-                                    <label for="phoneno"> <b>Phone number</b> </label>
+                                    <label for="phoneno"> <b>Phone number</b> </label></br>
                                     <input id="phoneno" name="phoneno"  type="text" placeholder="Phone number"/>
                                 </p>
 								<p> 
-                                    <label for="religion"> <b>Religion</b> </label>
+                                    <label for="religion"> <b>Religion</b> </label></br>
                                     <input id="religion" name="religion"  type="text" placeholder="Religion"/>
                                 </p>
 								<p> 
-                                    <label for="education"> <b>Education</b> </label>
+                                    <label for="education"> <b>Education</b> </label></br>
                                     <input id="education" name="education"  type="text" placeholder="Education"/>
                                 </p>
 								<p> 
-                                    <label for="occupation"> <b>Occupation</b> </label>
+                                    <label for="occupation"> <b>Occupation</b> </label></br>
                                     <input id="occupation" name="occupation"  type="text" placeholder="Occupation"/>
                                 </p>
 								<p> 
-                                    <label for="income"> <b>Monthly Income</b> </label>
+                                    <label for="income"> <b>Monthly Income</b> </label></br>
                                     <input id="income" name="income"  type="text" placeholder="Monthly Income"/>
                                 </p>
 								</div>
 								
 								
                                 
-                                <p class="login button"> 
+                                <p class="login button"></br> 
                                     <input type="submit" value="Register" /> 
 								</p>
                   
