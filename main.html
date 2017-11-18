@@ -131,10 +131,10 @@
                             $('[data-toggle="tooltip"]').tooltip();   
                              });
                             </script>
-								<p> Please click on Below Buttons To Enter Personal And Other Details</p>
+								<!--<p> Please click on Below Buttons To Enter Personal And Other Details</p>
 								<a href="#personal" class="btn btn-info" data-toggle="collapse" data-toggle="tooltip" title="please fill this field!" style="background-color:white">Personal Details *</a>&nbsp;
 								<br><br><a href="#other" class="btn btn-info" data-toggle="collapse" data-toggle="tooltip" title="please fill this field!" style="background-color:white">Other Details *</a>
-								<div id="personal" class="collapse">
+								<div id="personal" class="collapse">-->
                                   <p align="left" style="font-size:22px"><b><u>Personal Details:</u></b></p><br>
 								<p><b>Marital Status:</b><br>
 								<select name="marital" style="width:80%">
@@ -181,11 +181,10 @@
                                     <input id="val" name="val"  type="date" placeholder="Validity Date"/>
                                 </p>
 								 
-								  </div>
-							
+								  
 								
 								<!-- other details-->
-								<div id="other" class="collapse">
+								
 								<p align="left" style="font-size:22px"><b><u>Other Details:</u></b></p><br>
 								<p> 
                                     <label for="emergency"> <b>Emergency Contact\attendant</b> </label></br>
@@ -196,8 +195,8 @@
                                     <input id="relation" name="relation"  type="text" placeholder="Realationship with Patient"/>
                                 </p>
 								<p> 
-                                    <label for="phoneno"> <b>Phone number</b> </label></br>
-                                    <input id="phoneno" name="phoneno"  type="text" placeholder="Phone number"/>
+                                    <label for="phoneno"> <b>Mobile number</b> </label></br>
+                                    <input id="mobile" name="mobile" required="required" type="text" pattern="[789][0-9]{9}" placeholder="Mobile Number"/>
                                 </p>
 								<p> 
                                     <label for="religion"> <b>Religion</b> </label></br>
@@ -215,7 +214,7 @@
                                     <label for="income"> <b>Monthly Income</b> </label></br>
                                     <input id="income" name="income"  type="text" placeholder="Monthly Income"/>
                                 </p>
-								</div>
+								
 								
 								
                                 
